@@ -3,7 +3,7 @@ import sys,os
 import unittest
 
 # ../libをロードパスに入れる
-app_home = os.path.join( os.path.dirname(os.path.abspath(__file__)) , ".." )
+app_home = os.path.abspath(os.path.join( os.path.dirname(os.path.abspath(__file__)) , ".." ))
 sys.path.append(os.path.join(app_home,"lib"))
 
 # ../テスト対象のライブラリのロード

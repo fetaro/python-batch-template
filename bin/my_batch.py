@@ -6,7 +6,7 @@ from ConfigParser import ConfigParser
 import logging
 
 # 親ディレクトリをアプリケーションのホーム(${app_home})に設定
-app_home = os.path.join( os.path.dirname(os.path.abspath(__file__)) , ".." )
+app_home = os.path.abspath(os.path.join( os.path.dirname(os.path.abspath(__file__)) , ".." ))
 # ${app_home}/libをライブラリロードパスに追加
 sys.path.append(os.path.join(app_home,"lib"))
 
