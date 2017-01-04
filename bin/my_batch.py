@@ -43,7 +43,7 @@ if __name__ == "__main__" :
     logger = logging.getLogger()
     logger.setLevel(logging.INFO)
     # 標準出力へのハンドラ
-    stdout_handler = logging.StreamHandler()
+    stdout_handler = logging.StreamHandler(sys.stdout)
     stdout_handler.setFormatter(log_format)
     logger.addHandler(stdout_handler)
     # ログファイルへのハンドラ
